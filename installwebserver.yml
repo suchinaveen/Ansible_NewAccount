@@ -6,4 +6,4 @@
   service: 
       name: apache    
       state: started
- 
+  when: ansibe_os_family="Debian"
