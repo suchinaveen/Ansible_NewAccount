@@ -1,0 +1,9 @@
+---
+- hosts: 
+  become:
+  tasks: 
+  - name: I want install webserver in my Ansible nodes
+    apt: 
+      name: apache2
+      state: present
+      
