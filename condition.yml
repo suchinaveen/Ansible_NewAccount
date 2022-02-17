@@ -5,5 +5,4 @@
   - name: I wnat to start my webservice
     service:
       name: apache2
-      state: present
-      
+      state: started
