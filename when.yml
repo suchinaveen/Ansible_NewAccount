@@ -1,9 +1,0 @@
----
-- hosts: all
-  become: yes
-  tasks:
-  - name: i wnat to start my webserver in ansible nodes
-    service: 
-      name: apache2
-      state: started
-  when: ansibel_os_family="Debian"    

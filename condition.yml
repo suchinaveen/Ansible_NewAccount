@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: I wnat to start my webservice
+    service:
+      name: apache2
+      state: present
+      
