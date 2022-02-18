@@ -2,7 +2,16 @@
 - hosts: all
   become: yes
   tasks: 
-  - name: I wnat to start my webservice
-    service:
+   - name: I want Install Webserver in my Ansible Nodes
+     apt: 
+      name: apache2
+      state: present
+     when: ansible_os_family='Debian"
+
+   - name: I want start my Webserver
+     service: 
       name: apache2
       state: started
+
+     when: ansible_os_family="Debian"
+              
