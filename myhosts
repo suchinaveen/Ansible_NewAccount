@@ -3,8 +3,6 @@
 192.168.2.2.
 
 
-[webservers:vars]
-mywebpackageforubuntu= apache2
-mywebpackageforRedhat= httpd
+
 
 
