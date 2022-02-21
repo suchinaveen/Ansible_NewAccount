@@ -9,7 +9,7 @@
     when: ansible_os_family == "Debian"
   - name: I want start my webservers
     service: 
-     name: "{mywebpackageforRedhat}"
+     name: "{mywebpackageforubuntu}"
      state: started
     when: ansible_os_family == "Debian"
 
