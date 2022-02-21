@@ -1,0 +1,6 @@
+[webservers]
+ 65.2.141.79 
+
+ [webservers:vars]
+ mywebpackageforubuntu = apache2
+ mywebpackageforRedHat = httpd
