@@ -6,7 +6,19 @@
     apt: 
      name: "{{mywebpackageforubuntu}}"
      state: present
-  when: ansible_os_family == "Debian"
+    when: ansible_os_family == "Debian"
+  - name: I want start my webservers
+    service: 
+     name: apache2
+     state: started
+    when: ansible_os_family == "Debian"
+
+  - name: I want to Install Webserver in "RedHat"
+    apt:
+     name: httpd
+     state: present
+    when: ansible_os_family == "RedHat"
+       
 
  
 
