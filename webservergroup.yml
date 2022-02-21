@@ -9,15 +9,15 @@
     when: ansible_os_family == "Debian"
   - name: I want start my webservers
     service: 
-     name: apache2
+     name: "{mywebpackageforRedhat}"
      state: started
     when: ansible_os_family == "Debian"
 
   - name: I want to Install Webserver in "RedHat"
     apt:
-     name: httpd
+     name: "{{mywebpackageforRedhat}}"
      state: present
-    when: ansible_os_family == "{{mywebpackageforRedhat}}"
+    when: ansible_os_family == "RedHat"
 
 
  
